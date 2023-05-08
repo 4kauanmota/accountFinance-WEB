@@ -1,0 +1,48 @@
+.listTitle{
+    font-size: 1.5rem;
+    margin: 2rem 0 0.5rem 4px;
+}
+
+table{
+    background-color: var(--main-white);
+    border-radius: 0.4rem;
+
+    margin-right: 30px;
+}
+
+table thead{
+    box-shadow: inset 10px 10px 0 100px var(--main-black);
+    border-radius: 0.4rem 0.4rem 0 0 ;
+}
+
+table tbody tr:nth-last-child(2n){
+    background-color: var(--secondary-gray);
+}
+
+table td, table tr{
+    text-align: left;
+}
+
+table td, table th{
+    padding: 0 2rem;
+}
+
+table tbody tr{
+    color: var(--main-black);
+}
+
+table tr{
+    height: 3rem;
+}
+
+table tbody tr:hover{
+    box-shadow: inset 2px 2px 16px 24px #ffb55c33;
+}
+
+table thead tr th{
+    padding: 0 5rem 0 2rem;
+}
+
+table tbody td{
+    padding: 0 2rem 0 2.1rem
+}

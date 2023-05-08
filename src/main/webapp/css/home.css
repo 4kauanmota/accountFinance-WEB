@@ -1,0 +1,57 @@
+.card{
+  width: 100%;
+  height: 8rem;
+
+  border-radius: 1.5rem;
+
+  margin: 1rem auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--main-white);
+
+  transition: 0.4s all;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 0px #000;
+}
+
+.textCard{
+  display: flex;
+  flex-flow: column wrap;
+
+  margin-left: 2rem;
+
+  color: var(--main-black);
+}
+
+.textCard h1{
+  font-size: 2.5rem;
+
+  margin-bottom: 1rem;
+}
+
+.textCard span{
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+}
+
+.textCard span b{
+  font-size: 1.2rem;
+  color: var(--main-gray);
+}
+
+.textCard span lord-icon{
+  width: 40px;
+  height: 40px;
+
+  margin-right: 0.5rem;
+}

@@ -1,0 +1,7 @@
+#category{
+  padding: 0 1.5rem;
+}
+
+#category option:nth-child(odd){
+  background-color: var(--secondary-gray);
+}

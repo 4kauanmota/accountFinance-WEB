@@ -1,0 +1,43 @@
+.actionsOrganization{
+    display: flex;
+
+    margin: 2rem 0 0 0;
+}
+
+form.informationsForm fieldset{
+    display: flex;
+}
+
+fieldset, p{
+    padding: 0;
+    margin: 0 1rem 0 0;
+}
+
+input:not([type="submit"]){
+    width: 14rem;
+}
+
+#name{
+    width: 18rem;
+}
+
+#email{
+    width: 22rem;
+}
+
+#login{
+    width: 16rem;
+}
+
+input:not([type="submit"]):nth-child(2){
+    width: 20rem;
+}
+
+input[type="submit"]{
+    margin: 0 1rem;
+    width: 14rem;
+}
+
+input[type="submit"]:first-child{
+    margin: 0 2.5rem 0 0;
+}

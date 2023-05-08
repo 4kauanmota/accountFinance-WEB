@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+
+    <persistence-unit name="database" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>package br.vianna.aula.model.User</class>
+        <class>package br.vianna.aula.model.Account</class>
+        <class>package br.vianna.aula.model.CreditAccount</class>
+        <class>package br.vianna.aula.model.BankAccount</class>
+        <class>package br.vianna.aula.model.Circulation</class>
+        <class>package br.vianna.aula.model.Category</class>
+        <class>package br.vianna.aula.model.Budget</class>
+        <class>package br.vianna.aula.model.Expense</class>
+        <class>package br.vianna.aula.model.AccountsPayable</class>
+        <class>package br.vianna.aula.model.AccountsReceivable</class>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/financas?zeroDateTimeBehavior=convertToNull"/>
+            <property name="javax.persistence.jdbc.user" value="aluno"/>
+            <property name="javax.persistence.jdbc.password" value="aluno"/>
+            <!--Driver mysql 5-->
+            <!--            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>-->
+            <!--Driver mysql 8-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <!--Driver Maria DB-->
+            <!--            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>-->
+            <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+            <!--<property name="javax.persistence.schema-generation.database.action" value="create"/>-->
+            <!--  propriedades do hibernate -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!--  atualiza o banco, gera as tabelas se for preciso -->
+            <!--create | update | validate | create-drop-->
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,78 @@
+.card{
+    background-color: var(--main-white);
+    border-radius: 0.4rem;
+
+    margin-bottom: 2rem;
+}
+
+.greenBorder{
+    border: 3px solid var(--main-green);
+}
+
+.redBorder{
+    border: 3px solid var(--main-red);
+}
+
+.informations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations > span{
+    display: inline-block;
+    width: 45%;
+}
+
+label{
+    color: var(--main-black);
+}
+
+span input:not([type="submit"]){
+    padding: 0 0 0 0;
+    font-size: 1.3rem;
+
+    border-bottom: 3px solid var(--main-white);
+    border-radius: 0;
+
+    transition: 0.4s all;
+}
+
+span input:not([type="submit"]):focus{
+  outline: none;
+  border-bottom: 3px solid var(--main-orange);
+  margin: 0 0 -3px 0;
+}
+
+button, #paymentMethod{
+  background-color: var(--main-black);
+  border: none;
+  color: var(--main-white);
+
+  padding: 0 1rem;
+  margin: 0 1rem 0 0;
+
+  border-radius: 0.4rem;
+}
+
+button{
+    height: 4.5rem;
+}
+
+input[type="submit"]{
+    margin: 0;
+}
+
+.newInformation{
+    width: 100% !important;
+
+    background-color: var(--main-black);
+}
+
+.updateIcon{
+    height: 74%;
+    width: 5rem
+}
+
+.center{
+    margin: 2rem 0 0 0;
+}
