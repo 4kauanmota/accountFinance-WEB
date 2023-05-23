@@ -20,5 +20,7 @@
 + `CSS`
 + `HTML`
 + `JAVASCRIPT`
++ `MYSQL`
++ `DBEAVER`
 + `INTELIJ`
 + `GITLAB`
